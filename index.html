@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tra cứu kết quả thi vào lớp 10 - Trường THPT Võ Thị Sáu</title>
+    <!-- Import Font Roboto -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- Import Font Awesome cho Icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Thư viện đọc file CSV -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
+    <!-- Liên kết file CSS riêng biệt -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <!-- BANNER TRÊN -->
+        <div class="banner">
+            <div class="school-info">
+                <img class="logo" src="Logo.png" alt="Logo">
+                <div class="school-name">Trường THPT Võ Thị Sáu</div>
+            </div>
+            <div class="title">Tra cứu kết quả thi vào lớp 10 năm học 2026 - 2027</div>
+        </div>
+
+        <!-- KHUNG TRA CỨU DƯỚI -->
+        <div class="search-card">
+            <div class="form-group">
+                <label>Nhập thông tin <span>*</span></label>
+                <input type="text" id="sbdInput" class="input-control" placeholder="Nhập số báo danh của bạn...">
+            </div>
+
+            <button type="button" class="btn-search" id="btnSearch">
+                <i class="fa-solid fa-magnifying-glass"></i> Tra cứu
+            </button>
+
+            <!-- Nơi xuất kết quả -->
+            <div id="resultBox" class="result-box"></div>
+        </div>
+    </div>
+
+    <!-- Liên kết file JS riêng biệt -->
+    <script src="script.js"></script>
+</body>
+</html>
