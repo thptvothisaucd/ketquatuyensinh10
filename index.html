@@ -24,21 +24,32 @@
             </div>
             <div class="title">Tra cứu kết quả thi vào lớp 10 năm học 2026 - 2027</div>
         </div>
-
-        <!-- KHUNG TRA CỨU DƯỚI -->
-        <div class="search-card">
-            <div class="form-group">
-                <label>Nhập số báo danh <span>*</span></label>
-                <input type="text" id="sbdInput" class="input-control" placeholder="Nhập số báo danh của bạn...">
+		
+		<!-- Giao diện 1: Đồng hồ đếm ngược -->
+        <div id="countdown-section" class="card">
+            <h2>Hệ Thống Tra Cứu Sẽ Mở Sau</h2>
+            <div class="countdown-timer">
+                <div class="timer-box"><span id="days">00</span><small>Ngày</small></div>
+                <div class="timer-box"><span id="hours">00</span><small>Giờ</small></div>
+                <div class="timer-box"><span id="minutes">00</span><small>Phút</small></div>
+                <div class="timer-box"><span id="seconds">00</span><small>Giây</small></div>
             </div>
-
-            <button type="button" class="btn-search" id="btnSearch">
-                <i class="fa-solid fa-magnifying-glass"></i> Tra cứu
-            </button>
-
-            <!-- Nơi xuất kết quả -->
-            <div id="resultBox" class="result-box"></div>
         </div>
+		
+        <!-- KHUNG TRA CỨU DƯỚI -->
+		<div id="search-section" class="search-card hidden">
+			<div class="form-group">
+				<label>Nhập số báo danh <span>*</span></label>
+				<input type="text" id="sbdInput" class="input-control" placeholder="Nhập số báo danh của bạn...">
+			</div>
+
+			<button type="button" class="btn-search" id="btnSearch">
+				<i class="fa-solid fa-magnifying-glass"></i> Tra cứu
+			</button>
+
+			<!-- Nơi xuất kết quả -->
+			<div id="resultBox" class="result-box"></div>
+		</div>
     </div>
 
     <!-- Liên kết file JS riêng biệt -->
